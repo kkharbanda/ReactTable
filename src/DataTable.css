@@ -1,0 +1,44 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+.search-container {
+    margin-bottom: 10px;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .pagination button {
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+  }
+  
+  .pagination select {
+    margin-left: 10px;
+  }
+  

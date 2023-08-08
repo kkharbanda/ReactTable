@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import Onchnageselect from './onchnageselect'
+import ReactTable from './ReactTable'
+// import './Datatable.css';
+// import DataTable from './Datatable'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path='/' element={<Onchnageselect/>}/>
+        <Route path='/tablesd' element={<ReactTable/>}/>
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App
